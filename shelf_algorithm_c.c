@@ -3,7 +3,7 @@
 
 
 // opencv를 이용하여 그림그리는 작업 시행
-// 자세한 알고리즘은 Python파일 
+// 자세한 알고리즘은 Python파일 참조
 
 
 typedef enum { FALSE, TRUE } TF;
