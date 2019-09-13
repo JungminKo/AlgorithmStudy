@@ -273,7 +273,7 @@ void simplefit(struct box* box_list, int num) {
 		}
 	}
 	
-	printf("적재율 : %.2lf", (double(usedspace) / double(256 * 256)) * 100);
+	printf("적재율 : %.2lf%%", (double(usedspace) / double(256 * 256)) * 100);
 	imshow("result", img);
 	waitKey(0);
 	
@@ -349,7 +349,7 @@ void fit(struct box* box_list, int num) {
 			}
 		}
 	}
-	printf("적재율 : %.2lf", (double(usedspace) / double(256 * 256)) * 100);
+	printf("적재율 : %.2lf%%", (double(usedspace) / double(256 * 256)) * 100);
 
 	imshow("result", img);
 	waitKey(0);
