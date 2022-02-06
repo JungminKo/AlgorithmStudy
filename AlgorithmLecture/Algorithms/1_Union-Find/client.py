@@ -1,19 +1,4 @@
-class UnifonFind_Eager():
-    def __init__(self, n):
-        self.n = n
-        self.connection = list(range(n))
-
-    def connected(self, p, q):
-        if (self.connection[p]==self.connection[q]) and (self.connection[p]!=-1):
-            return True
-        return False
-    
-    def union(self, p, q):
-        change_num = self.connection[p]
-        for i in range(self.n):
-            if (self.connection[i] == change_num):
-                self.connection[i] = self.connection[q]
-
+from QuickFind import QuickFindUF
 
 class UnionFind():
     def __init__(self, n):
@@ -29,7 +14,7 @@ class UnionFind():
 
 def main():
     n = int(input())
-    uf = UnifonFind_Eager(n)
+    uf = QuickFindUF(n)
     while (True) :
         input_string = input()
         if len(input_string) == 0:
