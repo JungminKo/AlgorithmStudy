@@ -2,16 +2,18 @@
 UnionFind Algorithm
 
 initialize : N
-union : N 
-find : N
+union : log(N) 
+find : log(N)
 '''
 
-class QuickUnionUF():
+class PathCompressionQuickUnionUF():
     def __init__(self, n):
         self.id = list(range(n))
+        self.size = [1]*n
 
     def _root(self, i):
         while (i != self.id[i]):
+            self.id[i] = self.id[self.id[i]] ##Check!
             i = self.id[i]
         return i
 
