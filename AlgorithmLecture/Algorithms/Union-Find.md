@@ -1,8 +1,9 @@
 
-- by Friedman and Sachs, it was proved that there is no linear time algorithm for the union find problem.
+- by Friedman and Sachs, it was proved that there is **no linear time algorithm** for the union find problem.
 
 
 ## Quick-find 
+[code](https://github.com/JungminKo/AlgorithmStudy/blob/master/AlgorithmLecture/Algorithms/1_Union-Find/QuickFind.py)
 - Running time
     - initialize : N
     - union : N 
@@ -12,6 +13,7 @@
     - Trees are flat, but too expensive to keep them flat
 
 ## Quick-union
+[code](https://github.com/JungminKo/AlgorithmStudy/blob/master/AlgorithmLecture/Algorithms/1_Union-Find/QuickUnion.py)
 - Running time
     - initialize : N
     - union : N 
@@ -23,6 +25,7 @@
 ### Improvement 
 1. Weighting
 - Weighted quick-Union
+    - [code](https://github.com/JungminKo/AlgorithmStudy/blob/master/AlgorithmLecture/Algorithms/1_Union-Find/WeightedQuickUnion.py)
     - Modify quick-union to avoid tall trees
     - keep track of size of each tree (number of objects)
     - Balance by linking root of smaller tree to root of larger tree
@@ -32,3 +35,5 @@
         - Union : log(N)
 
 2. path compression
+- path compression union
+    - [code](https://github.com/JungminKo/AlgorithmStudy/blob/master/AlgorithmLecture/Algorithms/1_Union-Find/PathCompressionQuickUnion.py)  
