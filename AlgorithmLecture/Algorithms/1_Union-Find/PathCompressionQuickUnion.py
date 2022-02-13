@@ -24,3 +24,11 @@ class PathCompressionQuickUnionUF():
         i = self._root(p)
         j = self._root(q)
         id[i] = j
+        
+        ##Check!
+        if (self.size[i] < self.size[j]):
+            self.id[i] = j
+            self.size[j] += self.size[i]
+        else:
+            self.id[j] = i
+            self.size[i] += self.size[j]
