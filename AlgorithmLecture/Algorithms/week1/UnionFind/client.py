@@ -1,17 +1,5 @@
 from QuickFind import QuickFindUF
 
-class UnionFind():
-    def __init__(self, n):
-        self.n = n
-
-    def connected(self, p, q):
-        ## 추후 정의
-        return False
-    
-    def union(self, p, q):
-        ## 추후 정의
-        p = q = 1
-
 def main():
     n = int(input())
     uf = QuickFindUF(n)
@@ -27,4 +15,6 @@ def main():
             uf.union(p, q)
             print(str(p) + " " + str(q))
     print(uf.connection)
-main()
+
+if __name__ == "__main__":
+    main()
