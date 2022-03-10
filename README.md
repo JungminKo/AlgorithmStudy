@@ -17,4 +17,4 @@
 
 2. Algorithms, Part1, Princeton University
 (https://www.coursera.org/learn/algorithms-part1)
-- Implementing codes covered in class in python
+- Implementing codes covered in class in java/python
